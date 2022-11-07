@@ -1,0 +1,74 @@
+@import '../../../../global.css';
+
+@-webkit-keyframes bg-pan-left {
+    0% {
+        background-color: aliceblue;
+      background-position: 100% 50%;
+    }
+    100% {
+        background-color: aquamarine;
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes bg-pan-left {
+    0% {
+        background-color: aliceblue;
+
+      background-position: 100% 50%;
+    }
+    100% {
+        background-color: aquamarine;
+
+      background-position: 0% 50%;
+    }
+  }
+nav{
+    height: 4vh;
+    width: inherit;
+    z-index: 1;
+    display: flex;
+    align-self: center;
+    margin-top: 3vh;
+}
+.wrapper{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{}
+.actionbar{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.actionbar button {  
+    /* background: transparent; */
+    -webkit-animation: bg-pan-left 8s both;
+            animation: bg-pan-left 8s both;
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-bottom: red 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+   
+}
+.actionbar button:hover{
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            
+}
+.actionbar button:active{
+    transition: ease 2s;
+   animation: none;
+   background-color: var(--primary-d);
+}
+
+
+
+
