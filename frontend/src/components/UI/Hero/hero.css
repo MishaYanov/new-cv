@@ -1,0 +1,104 @@
+.hero-wrapper{
+    min-height: 500px;
+    height: 60vh;
+    min-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.hero-wrapper .hero-creative::before{
+    min-width: 500px;
+    max-width: 520px;
+    padding: 10px;
+    transition: ease-in 0.5s;
+
+}
+.hero-wrapper .hero-creative:hover{
+  transform: 3s rotate(-10deg);
+  transition: 3s ease-in;
+}
+.hero-wrapper .hero-content{
+    min-width: 500px;
+    max-width: 520px;
+    padding: 10px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#show-animation{
+        -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+#hide-animation{
+        -webkit-animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                
+}
+#hide-animation::after{
+  display: none;
+}
+#hide-animation::before{
+  display: none;
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+      display: block;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      /* -webkit-transform: translateX(1000px);
+              transform: translateX(1000px); */
+      opacity: 0;
+      display: none;
+    }
+  }
+  @keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      /* -webkit-transform: translateX(1000px);
+              transform: translateX(1000px); */
+      opacity: 0;
+      display: none;
+    }
+  }
+  .placeholder{
+    width: 100%;
+  }
+
+  

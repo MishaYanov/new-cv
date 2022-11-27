@@ -1,0 +1,18 @@
+
+
+ul.link-list{
+    width: 50vw;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 3rem auto 3rem;
+    list-style: none;
+    border-top: 2px red double ;
+    padding: 2rem 1rem 2rem;
+    border-bottom: 3px solid red;
+    text-align: center;
+}
+li span{
+    padding: 0.3rem;
+    cursor: pointer;
+}

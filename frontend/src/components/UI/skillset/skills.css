@@ -1,0 +1,48 @@
+@import '../../../global.css';
+.skills-wrapper{
+    margin: 4rem auto 4rem;
+    width: 70vw;
+    height: 60vh;
+    border: 2px solid var(--secondary-l);
+    position: relative;
+
+}
+.skills-cont{
+    width: inherit;
+    height: inherit;
+}
+.slides-handler{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+.arrow {
+    z-index: 100;
+    background-color: red;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow, .arrow>h3{
+    cursor: pointer;
+
+}
+.arrow-right{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 16px);
+}
+.arrow-left{
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 16px);
+}
+.arrow:hover{
+    background-color: magenta;
+}
+.arrow:active{
+    background-color: brown;
+}
